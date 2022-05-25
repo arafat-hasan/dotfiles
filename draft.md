@@ -8,6 +8,5 @@ set -U XDG_CONFIG_HOME "$HOME/.config"
 উবুন্তুর ফায়ারফক্সে বিবিসি বাংলা ফন্ট ভেঙে যাওয়ার সমস্যা ছিল। খুজে দেখা গেল যে FreeSans ফন্ট ব্যবহৃত হচ্ছে যা সিস্টেমে ইন্সটল নেই। অতপর ইন্সটল করা হলো। এছাড়ায় নোটো বেঙ্গলি ফ্যামিলি ও অন্যান্য বাংলা ফন্ট ইন্সটল করা হলো। fonts ডিরেক্টরিতে সকল ফন্ট আছে।
 
 ```
-sudo cp *.ttf /usr/local/share/fonts/
-sudo cp *.otf /usr/local/share/fonts/
+sudo cp -a . /usr/local/share/fonts/
 ```
