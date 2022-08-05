@@ -10,3 +10,23 @@ set -U XDG_CONFIG_HOME "$HOME/.config"
 ```
 sudo cp -a . /usr/local/share/fonts/
 ```
+
+
+
+## Start Slack Minimized on Startup
+
+Gnome startup application এ স্লাক সংযুক্ত করে কমান্ড দিতে হবে `slack -u %U`। অথবা নিচের ঠিকানায় নিচের টেক্সট রাখতে হবে।
+
+~/.config/autostart/slack.desktop
+```
+[Desktop Entry]
+Type=Application
+Exec=slack -u %U
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Slack
+Name=Slack
+Comment[en_US]=Slack Desktop
+Comment=Slack Desktop
+```
